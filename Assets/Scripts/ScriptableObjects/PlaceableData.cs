@@ -1,5 +1,4 @@
 using System;
-using DefaultNamespace;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Placeable Data", fileName = "New Placeable Data")]
@@ -28,6 +27,7 @@ public class PlaceableData : ScriptableObject
 [Serializable]
 public class PlaceableDataStats
 {
-    public float FireRate { get; set; }
-    public float Damage { get; set; }
+    [field:SerializeField] public float BuildTime { get; private set; }
+    [field:SerializeField] public float FireRate { get; private set; }
+    [field:SerializeField] public float Damage { get; private set; }
 }

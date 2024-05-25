@@ -1,9 +1,6 @@
-using DefaultNamespace;
-
 
 public class PlaceableManager : Singleton<PlaceableManager>
 {
-    
     private PlaceableObject _placeableObject;
 
     private void OnEnable()
@@ -15,9 +12,7 @@ public class PlaceableManager : Singleton<PlaceableManager>
     private void OnPlaceablePlaced(OnPlaceablePlaced obj)
     {
         if (obj.Data == _placeableObject)
-        {
             _placeableObject = null;
-        }
     }
 
     private void OnDisable()

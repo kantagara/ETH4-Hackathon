@@ -16,4 +16,13 @@ MonoBehaviour:
   <Description>k__BackingField: Shoots Arrows
   <Prefab>k__BackingField: {fileID: 3060658931830740013, guid: 98bcabef0f980471a89698ae9d903bd8, type: 3}
   <Icon>k__BackingField: {fileID: 21300000, guid: f8ac5d8be763a4e738cf0505e674702a, type: 3}
-  <Stats>k__BackingField: []
+  <Stats>k__BackingField:
+  - <BuildTime>k__BackingField: 3
+    <FireRate>k__BackingField: 0
+    <Damage>k__BackingField: 0
+  - <BuildTime>k__BackingField: 0
+    <FireRate>k__BackingField: 0
+    <Damage>k__BackingField: 0
+  - <BuildTime>k__BackingField: 0
+    <FireRate>k__BackingField: 0
+    <Damage>k__BackingField: 0

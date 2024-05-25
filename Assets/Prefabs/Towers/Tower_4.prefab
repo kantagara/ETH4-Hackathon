@@ -163,6 +163,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 108519354724779101, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: 919132149155446097, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
       propertyPath: m_Name
       value: wizard_tower_LVL_4_rig
@@ -281,6 +285,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8726252685583071114, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -347,6 +355,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -4217901384672210241, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: -3446761985100466153, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -441,6 +453,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -4651880134536250074, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: -4374572744765691698, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
       propertyPath: m_Layer
       value: 6

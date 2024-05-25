@@ -151,6 +151,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c297717f0dd164c5fa57babccd656578, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: 919132149155446097, guid: c297717f0dd164c5fa57babccd656578, type: 3}
       propertyPath: m_Name
       value: _Cannon_tower_LVL_1
@@ -217,6 +221,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0d14f40ae8c7c4f11a4180cb60685a38, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: 919132149155446097, guid: 0d14f40ae8c7c4f11a4180cb60685a38, type: 3}
       propertyPath: m_Name
       value: _Cannon_tower_LVL_4
@@ -287,6 +295,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3801913547c7d4aa7ab72f4299dc23cd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: 919132149155446097, guid: 3801913547c7d4aa7ab72f4299dc23cd, type: 3}
       propertyPath: m_Name
       value: _Cannon_tower_LVL_3
@@ -357,6 +369,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c83265f020c65452c9e0b9ff84730b82, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: 919132149155446097, guid: c83265f020c65452c9e0b9ff84730b82, type: 3}
       propertyPath: m_Name
       value: _Cannon_tower_LVL_2

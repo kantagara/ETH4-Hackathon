@@ -4,6 +4,7 @@ Shader "Custom/ProgressiveBuildShader"
     {
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
         _SpecColor ("Specular Color", Color) = (1,1,1,1)
+        _Color ("Color", Color) = (1,1,1,1)
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _BumpMap ("Normal Map", 2D) = "bump" {}
         _Progress ("Building Progress (0-1)", Range(0,1)) = 0.5
@@ -23,6 +24,7 @@ Shader "Custom/ProgressiveBuildShader"
 
         sampler2D _MainTex;
         sampler2D _BumpMap;
+        fixed3 _Color;
         float _Progress;
         float _ObjectHeight;
         float _Glossiness;
@@ -44,7 +46,7 @@ Shader "Custom/ProgressiveBuildShader"
 
             // Albedo and visibility based on building progress
             fixed4 tex = tex2D(_MainTex, IN.uv_MainTex);
-            o.Albedo = tex.rgb * step(heightFraction, _Progress);
+            o.Albedo = tex.rgb * step(heightFraction, _Progress) * _Color;
             o.Alpha = tex.a * step(heightFraction, _Progress);
 
             // Specular and smoothness
