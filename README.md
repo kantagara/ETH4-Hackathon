@@ -1,0 +1,1 @@
+## In order to correctly download this you need to have Simple Fantasy Asset Pack Owned and imported into the unity project.
