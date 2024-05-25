@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +13,22 @@ public class UI_PlaceableData : MonoBehaviour
     {
         _button = GetComponent<Button>();
         _button.onClick.AddListener(() => EventSystem<OnPlaceableDataSelected>.Invoke(new OnPlaceableDataSelected(){ Data = _placeableData }));
+        EventSystem<OnResourceAmountChanged>.Subscribe(ResourceAmountChanged);
+    }
+
+    private void Start()
+    {
+        _button.enabled = ResourceManager.CanBePurchased(_placeableData.CurrentStats.PurchaseCost);
+    }
+
+    private void OnDestroy()
+    {
+        EventSystem<OnResourceAmountChanged>.Unsubscribe(ResourceAmountChanged);
+    }
+
+    private void ResourceAmountChanged(OnResourceAmountChanged obj)
+    {
+        _button.enabled = ResourceManager.CanBePurchased(_placeableData.CurrentStats.PurchaseCost);
     }
 
     public void Init(PlaceableData placeableData)

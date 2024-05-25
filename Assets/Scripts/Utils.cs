@@ -17,3 +17,16 @@ public static class Utils
         return results.Count > 0;
     }
 }
+
+public static class Extensions
+{
+    public static Vector3 GetRandomPointInBounds(this Collider collider)
+    {
+        var bounds = collider.bounds;
+        return new Vector3(
+            Random.Range(bounds.min.x, bounds.max.x),
+            Random.Range(bounds.min.y, bounds.max.y),
+            Random.Range(bounds.min.z, bounds.max.z)
+        );
+    }
+}

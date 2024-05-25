@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 
 public enum PlaceableState
 {
@@ -15,9 +16,13 @@ public class PlaceableObject : MonoBehaviour
 {
     private static Camera _camera;
     private static readonly int Progress = Shader.PropertyToID("_Progress");
-    public Transform InstantiationPoint;
-    public GameObject ObjectToShoot;
-    public LayerMask LayerMask;
+
+    [FormerlySerializedAs("LayerMask")] [Header("Placing")]
+    public LayerMask BuildingLayerMask;
+
+    [Header("Shooting")] public Transform InstantiationPoint;
+
+    public Projectile ObjectToShoot;
 
     private readonly Collider[] _colliders = new Collider[1];
 
@@ -25,16 +30,20 @@ public class PlaceableObject : MonoBehaviour
 
     private BoxCollider _box;
 
-    private float _currentBuildTime;
+    private Coroutine _coroutine;
 
-    private PlaceableData _placeableData;
+    private float _currentBuildTime;
+    private double _nextFire;
+
 
     private Renderer[] _renderers;
-    private Material[] _sharedMaterial;
-    public PlaceableState State { get; private set; } = PlaceableState.Placing;
+    private Transform _targetToShoot;
+    [field:SerializeField]public PlaceableState State { get; private set; } = PlaceableState.Placing;
 
     public bool CanBePlaced { get; private set; } = true;
-    public PlaceableData PlaceableData { get; set; }
+    [field:SerializeField]public PlaceableData PlaceableData { get; set; }
+
+    public Transform OverrideTarget; 
 
 
     private void Awake()
@@ -43,7 +52,7 @@ public class PlaceableObject : MonoBehaviour
         _box.enabled = false;
         _camera = Camera.main;
         _renderers = GetComponentsInChildren<Renderer>();
-        _sharedMaterial = _renderers.Select(x => x.sharedMaterial).ToArray();
+        EnableOrDisableRenderers();
     }
 
 
@@ -81,6 +90,60 @@ public class PlaceableObject : MonoBehaviour
 
     private void Shoot()
     {
+        RotateTowardsClosestTarget();
+        if (Time.time > _nextFire)
+        {
+            _targetToShoot = FindClosestTarget();
+            if (_targetToShoot == null)
+            {
+                return;
+            }
+
+            _nextFire = Time.time + PlaceableData.CurrentStats.FireRate;
+            Projectile projectile = Instantiate(ObjectToShoot, InstantiationPoint.position, InstantiationPoint.rotation);
+            projectile.targetCollider = _targetToShoot.GetComponent<Collider>();
+            projectile.LaunchPoint = InstantiationPoint;
+            projectile.projectileRigidbody.position = InstantiationPoint.position;
+            projectile.stats = PlaceableData.CurrentStats;
+            projectile.FireProjectile();
+            
+        }
+        
+    }
+
+    private void RotateTowardsClosestTarget()
+    {
+        if (_targetToShoot == null) return;
+        var direction = _targetToShoot.position - transform.position;
+        var rotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 5);
+    }
+
+    private Transform FindClosestTarget()
+    {
+        var enemies = SpawnManager.Instance.SpawnedEnemies;
+        if (enemies.Count == 0) return null;
+        EnemyController closest = null;
+        
+        foreach (var enemy in enemies)
+        {
+            var distanceToEnemy = Vector3.Distance(enemy.transform.position, transform.position);
+            if (distanceToEnemy > PlaceableData.CurrentStats.Range)
+            {
+                continue;
+            }
+            
+            if (closest == null)
+            {
+                closest = enemy;
+                continue;
+            }
+            
+            if (distanceToEnemy < Vector3.Distance(closest.transform.position, transform.position))
+                closest = enemy;
+        }
+        
+        return closest?.transform;
     }
 
     private void Building()
@@ -112,13 +175,12 @@ public class PlaceableObject : MonoBehaviour
     private void FollowMouse()
     {
         var ray = _camera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out var hit, 1000, LayerMask))
-        {
-            transform.position = hit.point;
-            CanBePlaced = CheckPlacement();
-            for (var i = 0; i < _sharedMaterial.Length; i++)
-                _renderers[i].material.color = CanBePlaced ? Color.white : Color.red;
-        }
+        if (!Physics.Raycast(ray, out var hit, 1000, BuildingLayerMask)) return;
+        
+        transform.position = hit.point;
+        CanBePlaced = CheckPlacement();
+        foreach (var renderer in _renderers)
+            renderer.material.color = CanBePlaced ? Color.white : Color.red;
     }
 
     private bool CheckPlacement()

@@ -27,7 +27,20 @@ public class PlaceableData : ScriptableObject
 [Serializable]
 public class PlaceableDataStats
 {
+    [field: SerializeField] public ResourceCost[] PurchaseCost { get; private set; }
     [field:SerializeField] public float BuildTime { get; private set; }
     [field:SerializeField] public float FireRate { get; private set; }
     [field:SerializeField] public float Damage { get; private set; }
+    [field: SerializeField] public float Range { get; private set; } = 20;
+    
+    [field: SerializeField] public ResourceCost[] UpgradeCost { get; private set; }
 }
+
+[Serializable]
+public class ResourceCost
+{
+    [field: SerializeField] public ResourceType ResourceType { get; private set; }
+    [field: SerializeField] public int Amount { get; private set; }
+}
+
+

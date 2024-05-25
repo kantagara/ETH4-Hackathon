@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &321523651064610117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5284572215841829046}
+  m_Layer: 6
+  m_Name: InstantiationLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5284572215841829046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321523651064610117}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 12.21, z: 3.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4911757154920241161}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4660783117210937757
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +43,7 @@ GameObject:
   - component: {fileID: 3060658931830740013}
   - component: {fileID: 2482269029055048937}
   - component: {fileID: 983823379358390530}
+  - component: {fileID: -3186968984263846105}
   m_Layer: 6
   m_Name: Tower_4
   m_TagString: Untagged
@@ -36,6 +68,7 @@ Transform:
   - {fileID: 3873156488320909181}
   - {fileID: 5997598438152235156}
   - {fileID: 2660083117878330820}
+  - {fileID: 5284572215841829046}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3060658931830740013
@@ -50,11 +83,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bafb280b994ccd9cf39a9cdb3349f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InstantiationPoint: {fileID: 0}
-  ObjectToShoot: {fileID: 0}
-  LayerMask:
+  BuildingLayerMask:
     serializedVersion: 2
     m_Bits: 8
+  InstantiationPoint: {fileID: 5284572215841829046}
+  ObjectToShoot: {fileID: 3908412113490469729, guid: 29742931432664c8d9d86ec1af7c55ee, type: 3}
+  <State>k__BackingField: 0
+  <PlaceableData>k__BackingField: {fileID: 11400000, guid: 77d98b87a7ea14ad0adfd7233c3090c3, type: 2}
+  OverrideTarget: {fileID: 0}
 --- !u!65 &2482269029055048937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -103,6 +139,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &-3186968984263846105
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4660783117210937757}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &2549102251630895663
 PrefabInstance:
   m_ObjectHideFlags: 0

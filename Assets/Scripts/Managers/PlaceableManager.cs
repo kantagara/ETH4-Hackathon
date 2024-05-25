@@ -1,7 +1,14 @@
 
+using System.Collections.Generic;
+using UnityEngine;
+
 public class PlaceableManager : Singleton<PlaceableManager>
 {
     private PlaceableObject _placeableObject;
+
+    protected override bool ShouldntBeDestroyedOnLoad => false;
+
+    public List<Transform> PlaceablesTransforms { get; } = new();
 
     private void OnEnable()
     {
@@ -11,6 +18,7 @@ public class PlaceableManager : Singleton<PlaceableManager>
 
     private void OnPlaceablePlaced(OnPlaceablePlaced obj)
     {
+        PlaceablesTransforms.Add(obj.Data.transform);
         if (obj.Data == _placeableObject)
             _placeableObject = null;
     }
