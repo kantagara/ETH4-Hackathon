@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class UI_PlaceableDataManger : Singleton<UI_PlaceableDataManger>
@@ -5,7 +6,7 @@ public class UI_PlaceableDataManger : Singleton<UI_PlaceableDataManger>
     [SerializeField] private PlaceableData[] placeableData;
     [SerializeField] private UI_PlaceableData uiPrefab;
 
-    private void Awake()
+    private void Start()
     {
         foreach (var data in placeableData)
         {

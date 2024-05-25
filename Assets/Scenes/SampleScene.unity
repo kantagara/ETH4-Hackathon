@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_19
       objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
       value: 154
@@ -193,6 +197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_11
       objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
       value: 162
@@ -247,6 +255,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 118566, guid: 579c39c4c6f0fd14bae8f4c04d373678, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 473642, guid: 579c39c4c6f0fd14bae8f4c04d373678, type: 3}
       propertyPath: m_RootOrder
       value: 218
@@ -300,6 +312,10 @@ PrefabInstance:
     - target: {fileID: 106960, guid: 991fa559b2699de4e833bb29d5f8d83f, type: 3}
       propertyPath: m_Name
       value: SF_Env_Tree_233
+      objectReference: {fileID: 0}
+    - target: {fileID: 106960, guid: 991fa559b2699de4e833bb29d5f8d83f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400204, guid: 991fa559b2699de4e833bb29d5f8d83f, type: 3}
       propertyPath: m_RootOrder
@@ -457,6 +473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Prop_CrateStack_04
       objectReference: {fileID: 0}
+    - target: {fileID: 100472, guid: b4790959fee11e34dadbf1a2ca54226e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 466662, guid: b4790959fee11e34dadbf1a2ca54226e, type: 3}
       propertyPath: m_RootOrder
       value: 545
@@ -510,6 +530,10 @@ PrefabInstance:
     - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_12
+      objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
@@ -569,6 +593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_30
       objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -627,6 +655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Path_Straight_43
       objectReference: {fileID: 0}
+    - target: {fileID: 121700, guid: a82eef8200c2790419bf0f96c3981887, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 403206, guid: a82eef8200c2790419bf0f96c3981887, type: 3}
       propertyPath: m_RootOrder
       value: 188
@@ -680,6 +712,10 @@ PrefabInstance:
     - target: {fileID: 198840, guid: 0ecafc9b92fa3084fbb4f05ee2649afa, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_Tower_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 198840, guid: 0ecafc9b92fa3084fbb4f05ee2649afa, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 449646, guid: 0ecafc9b92fa3084fbb4f05ee2649afa, type: 3}
       propertyPath: m_RootOrder
@@ -739,6 +775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Banner_03
       objectReference: {fileID: 0}
+    - target: {fileID: 144860, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 413012, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
       propertyPath: m_RootOrder
       value: 170
@@ -797,6 +837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_14
       objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
       value: 159
@@ -843,60 +887,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
   m_PrefabInstance: {fileID: 328223851}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &331091535
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 676314629}
-    m_Modifications:
-    - target: {fileID: 182374, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-      propertyPath: m_Name
-      value: SF_Env_River_Straight_14
-      objectReference: {fileID: 0}
-    - target: {fileID: 494632, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-      propertyPath: m_RootOrder
-      value: 260
-      objectReference: {fileID: 0}
-    - target: {fileID: 494632, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 41.630005
-      objectReference: {fileID: 0}
-    - target: {fileID: 494632, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 494632, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.5100098
-      objectReference: {fileID: 0}
-    - target: {fileID: 494632, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 494632, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 494632, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 494632, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
---- !u!4 &331091536 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 494632, guid: 5df6f97e2a66d384f8b1060dfddc39d3, type: 3}
-  m_PrefabInstance: {fileID: 331091535}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &379943145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +898,10 @@ PrefabInstance:
     - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_13
+      objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
@@ -967,6 +961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_16
       objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
       value: 158
@@ -1024,6 +1022,10 @@ PrefabInstance:
     - target: {fileID: 192254, guid: 75c3d85b9c9ea5f4db3cb22c393b7e93, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_90
+      objectReference: {fileID: 0}
+    - target: {fileID: 192254, guid: 75c3d85b9c9ea5f4db3cb22c393b7e93, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 495092, guid: 75c3d85b9c9ea5f4db3cb22c393b7e93, type: 3}
       propertyPath: m_RootOrder
@@ -1086,6 +1088,10 @@ PrefabInstance:
     - target: {fileID: 137546, guid: 58fc8075cbbaab24693bcd3b6036e429, type: 3}
       propertyPath: m_Name
       value: SF_Prop_FlagString_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 137546, guid: 58fc8075cbbaab24693bcd3b6036e429, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 491668, guid: 58fc8075cbbaab24693bcd3b6036e429, type: 3}
       propertyPath: m_RootOrder
@@ -1153,6 +1159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_225
       objectReference: {fileID: 0}
+    - target: {fileID: 162482, guid: 05ada695a69f7274f8a6562f8c72503d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 433740, guid: 05ada695a69f7274f8a6562f8c72503d, type: 3}
       propertyPath: m_RootOrder
       value: 613
@@ -1207,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Wep_Human_Arrow_05
       objectReference: {fileID: 0}
+    - target: {fileID: 132892, guid: baed7906d997fb54ba9e2c78c155e0db, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 489508, guid: baed7906d997fb54ba9e2c78c155e0db, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -1260,6 +1274,10 @@ PrefabInstance:
     - target: {fileID: 144860, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Banner_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 144860, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 413012, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
       propertyPath: m_RootOrder
@@ -1319,6 +1337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_TallTower_02
       objectReference: {fileID: 0}
+    - target: {fileID: 117258, guid: 51752c12bbe1e3146a0059e229b60c49, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 403942, guid: 51752c12bbe1e3146a0059e229b60c49, type: 3}
       propertyPath: m_RootOrder
       value: 178
@@ -1376,7 +1398,7 @@ GameObject:
   - component: {fileID: 620385866}
   - component: {fileID: 620385865}
   - component: {fileID: 620385864}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1469,6 +1491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Path_Straight_38
       objectReference: {fileID: 0}
+    - target: {fileID: 121700, guid: a82eef8200c2790419bf0f96c3981887, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 403206, guid: a82eef8200c2790419bf0f96c3981887, type: 3}
       propertyPath: m_RootOrder
       value: 191
@@ -1519,6 +1545,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 165096, guid: c94fdbf286f6d284a91981ce57f549d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 410718, guid: c94fdbf286f6d284a91981ce57f549d6, type: 3}
       propertyPath: m_RootOrder
       value: 187
@@ -1574,7 +1604,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 676314629}
-  m_Layer: 0
+  - component: {fileID: 676314630}
+  m_Layer: 6
   m_Name: Castle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1649,7 +1680,6 @@ Transform:
   - {fileID: 379943146}
   - {fileID: 1461732757}
   - {fileID: 1701885390}
-  - {fileID: 331091536}
   - {fileID: 1021289323}
   - {fileID: 483772154}
   - {fileID: 2141270903}
@@ -1674,6 +1704,27 @@ Transform:
   - {fileID: 1780531142}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 8.53, z: 0}
+--- !u!65 &676314630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676314628}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 54.46, y: 27.78, z: 54.4}
+  m_Center: {x: 11.26, y: 13, z: 0}
 --- !u!1001 &693148160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1685,6 +1736,10 @@ PrefabInstance:
     - target: {fileID: 144860, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Banner_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 144860, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 413012, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
       propertyPath: m_RootOrder
@@ -1838,6 +1893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_231
       objectReference: {fileID: 0}
+    - target: {fileID: 106960, guid: 991fa559b2699de4e833bb29d5f8d83f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400204, guid: 991fa559b2699de4e833bb29d5f8d83f, type: 3}
       propertyPath: m_RootOrder
       value: 619
@@ -1891,6 +1950,10 @@ PrefabInstance:
     - target: {fileID: 192254, guid: 75c3d85b9c9ea5f4db3cb22c393b7e93, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_79
+      objectReference: {fileID: 0}
+    - target: {fileID: 192254, guid: 75c3d85b9c9ea5f4db3cb22c393b7e93, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 495092, guid: 75c3d85b9c9ea5f4db3cb22c393b7e93, type: 3}
       propertyPath: m_RootOrder
@@ -1950,6 +2013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_23
       objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -2008,6 +2075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Path_End_17
       objectReference: {fileID: 0}
+    - target: {fileID: 137258, guid: 6c000dfd4ad6c254d815b7beacda3bbf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 484310, guid: 6c000dfd4ad6c254d815b7beacda3bbf, type: 3}
       propertyPath: m_RootOrder
       value: 187
@@ -2061,6 +2132,10 @@ PrefabInstance:
     - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_17
+      objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
@@ -2120,6 +2195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Path_Straight_41
       objectReference: {fileID: 0}
+    - target: {fileID: 109106, guid: 16b40989311320c40b164d3ef4138994, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 485198, guid: 16b40989311320c40b164d3ef4138994, type: 3}
       propertyPath: m_RootOrder
       value: 190
@@ -2173,6 +2252,10 @@ PrefabInstance:
     - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_22
+      objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
@@ -2232,6 +2315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Prop_CrateStack_03
       objectReference: {fileID: 0}
+    - target: {fileID: 100472, guid: b4790959fee11e34dadbf1a2ca54226e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 466662, guid: b4790959fee11e34dadbf1a2ca54226e, type: 3}
       propertyPath: m_RootOrder
       value: 547
@@ -2285,6 +2372,10 @@ PrefabInstance:
     - target: {fileID: 192254, guid: 75c3d85b9c9ea5f4db3cb22c393b7e93, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_73
+      objectReference: {fileID: 0}
+    - target: {fileID: 192254, guid: 75c3d85b9c9ea5f4db3cb22c393b7e93, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 495092, guid: 75c3d85b9c9ea5f4db3cb22c393b7e93, type: 3}
       propertyPath: m_RootOrder
@@ -2436,6 +2527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_15
       objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
       value: 157
@@ -2494,6 +2589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Window_02
       objectReference: {fileID: 0}
+    - target: {fileID: 118566, guid: 579c39c4c6f0fd14bae8f4c04d373678, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 473642, guid: 579c39c4c6f0fd14bae8f4c04d373678, type: 3}
       propertyPath: m_RootOrder
       value: 217
@@ -2547,6 +2646,10 @@ PrefabInstance:
     - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_07
+      objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
@@ -2606,6 +2709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_19
       objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -2663,6 +2770,10 @@ PrefabInstance:
     - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_18
+      objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
@@ -2722,6 +2833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_211
       objectReference: {fileID: 0}
+    - target: {fileID: 135980, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 487838, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
       propertyPath: m_RootOrder
       value: 599
@@ -2775,6 +2890,10 @@ PrefabInstance:
     - target: {fileID: 179848, guid: b95b26095c91c7d4ca6786fa33dd8076, type: 3}
       propertyPath: m_Name
       value: SF_Env_Tree_222
+      objectReference: {fileID: 0}
+    - target: {fileID: 179848, guid: b95b26095c91c7d4ca6786fa33dd8076, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 442430, guid: b95b26095c91c7d4ca6786fa33dd8076, type: 3}
       propertyPath: m_RootOrder
@@ -2830,6 +2949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_Tower_03
       objectReference: {fileID: 0}
+    - target: {fileID: 198840, guid: 0ecafc9b92fa3084fbb4f05ee2649afa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 449646, guid: 0ecafc9b92fa3084fbb4f05ee2649afa, type: 3}
       propertyPath: m_RootOrder
       value: 181
@@ -2884,6 +3007,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 144860, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 413012, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
       propertyPath: m_RootOrder
       value: 173
@@ -2941,6 +3068,10 @@ PrefabInstance:
     - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_20
+      objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
@@ -3000,6 +3131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_210
       objectReference: {fileID: 0}
+    - target: {fileID: 135980, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 487838, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
       propertyPath: m_RootOrder
       value: 598
@@ -3053,6 +3188,10 @@ PrefabInstance:
     - target: {fileID: 106960, guid: 991fa559b2699de4e833bb29d5f8d83f, type: 3}
       propertyPath: m_Name
       value: SF_Env_Tree_234
+      objectReference: {fileID: 0}
+    - target: {fileID: 106960, guid: 991fa559b2699de4e833bb29d5f8d83f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400204, guid: 991fa559b2699de4e833bb29d5f8d83f, type: 3}
       propertyPath: m_RootOrder
@@ -3108,6 +3247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_13
       objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
       value: 160
@@ -3162,6 +3305,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 198840, guid: 0ecafc9b92fa3084fbb4f05ee2649afa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 449646, guid: 0ecafc9b92fa3084fbb4f05ee2649afa, type: 3}
       propertyPath: m_RootOrder
       value: 182
@@ -3219,6 +3366,10 @@ PrefabInstance:
     - target: {fileID: 137546, guid: 58fc8075cbbaab24693bcd3b6036e429, type: 3}
       propertyPath: m_Name
       value: SF_Prop_FlagString_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 137546, guid: 58fc8075cbbaab24693bcd3b6036e429, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 491668, guid: 58fc8075cbbaab24693bcd3b6036e429, type: 3}
       propertyPath: m_RootOrder
@@ -3286,6 +3437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Banner_05
       objectReference: {fileID: 0}
+    - target: {fileID: 144860, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 413012, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
       propertyPath: m_RootOrder
       value: 171
@@ -3344,6 +3499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_21
       objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -3401,6 +3560,10 @@ PrefabInstance:
     - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
@@ -3579,6 +3742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_212
       objectReference: {fileID: 0}
+    - target: {fileID: 135980, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 487838, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
       propertyPath: m_RootOrder
       value: 600
@@ -3632,6 +3799,10 @@ PrefabInstance:
     - target: {fileID: 144860, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Banner_07
+      objectReference: {fileID: 0}
+    - target: {fileID: 144860, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 413012, guid: 75f72fc930f278d458917f668db48fd8, type: 3}
       propertyPath: m_RootOrder
@@ -3691,6 +3862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_215
       objectReference: {fileID: 0}
+    - target: {fileID: 135980, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 487838, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
       propertyPath: m_RootOrder
       value: 603
@@ -3741,6 +3916,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 119076, guid: 5ee81951f289c71488312e516c420515, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 446804, guid: 5ee81951f289c71488312e516c420515, type: 3}
       propertyPath: m_RootOrder
       value: 186
@@ -3795,6 +3974,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
       value: 169
@@ -3852,6 +4035,10 @@ PrefabInstance:
     - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_29
+      objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
@@ -3911,6 +4098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_228
       objectReference: {fileID: 0}
+    - target: {fileID: 151710, guid: 17c412bdb3e291e42a2cdd2a9adbee74, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 490028, guid: 17c412bdb3e291e42a2cdd2a9adbee74, type: 3}
       propertyPath: m_RootOrder
       value: 616
@@ -3964,6 +4155,10 @@ PrefabInstance:
     - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_27
+      objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
@@ -4023,6 +4218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_06
       objectReference: {fileID: 0}
+    - target: {fileID: 176648, guid: 37edcb83495161e4fba7fc42556c9152, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 439282, guid: 37edcb83495161e4fba7fc42556c9152, type: 3}
       propertyPath: m_RootOrder
       value: 166
@@ -4080,6 +4279,10 @@ PrefabInstance:
     - target: {fileID: 102572, guid: 32d81666f3c8ac74fb72f0da9aeeac89, type: 3}
       propertyPath: m_Name
       value: SF_Env_Path_Straight_40
+      objectReference: {fileID: 0}
+    - target: {fileID: 102572, guid: 32d81666f3c8ac74fb72f0da9aeeac89, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 421376, guid: 32d81666f3c8ac74fb72f0da9aeeac89, type: 3}
       propertyPath: m_RootOrder
@@ -4203,6 +4406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_Tower_04
       objectReference: {fileID: 0}
+    - target: {fileID: 198840, guid: 0ecafc9b92fa3084fbb4f05ee2649afa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 449646, guid: 0ecafc9b92fa3084fbb4f05ee2649afa, type: 3}
       propertyPath: m_RootOrder
       value: 180
@@ -4261,6 +4468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_09
       objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
       value: 163
@@ -4315,6 +4526,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 167168, guid: b9959de7401e30d4881f87a99e68144b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 473068, guid: b9959de7401e30d4881f87a99e68144b, type: 3}
       propertyPath: m_RootOrder
       value: 175
@@ -4369,6 +4584,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 117258, guid: 51752c12bbe1e3146a0059e229b60c49, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 403942, guid: 51752c12bbe1e3146a0059e229b60c49, type: 3}
       propertyPath: m_RootOrder
       value: 179
@@ -4427,6 +4646,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_229
       objectReference: {fileID: 0}
+    - target: {fileID: 151710, guid: 17c412bdb3e291e42a2cdd2a9adbee74, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 490028, guid: 17c412bdb3e291e42a2cdd2a9adbee74, type: 3}
       propertyPath: m_RootOrder
       value: 617
@@ -4469,6 +4692,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 490028, guid: 17c412bdb3e291e42a2cdd2a9adbee74, type: 3}
   m_PrefabInstance: {fileID: 1877519650}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1901448064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1901448066}
+  - component: {fileID: 1901448065}
+  m_Layer: 0
+  m_Name: PlaceableManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1901448065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901448064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e2df817b47c40c389ab324bf9dac09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1901448066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901448064}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.30661, y: 179.6475, z: -11.835571}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1951517498
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,7 +4747,7 @@ GameObject:
   - component: {fileID: 1951517499}
   - component: {fileID: 1951517501}
   - component: {fileID: 1951517500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SF_Bld_Castle_Gate_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4496,7 +4763,7 @@ Transform:
   m_GameObject: {fileID: 1951517498}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -12.258987, y: 0, z: 0.019989014}
+  m_LocalPosition: {x: -11.9, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4564,6 +4831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_72
       objectReference: {fileID: 0}
+    - target: {fileID: 161206, guid: 9db3b5c2bc2a5c341b987dadba4a3b6c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 455412, guid: 9db3b5c2bc2a5c341b987dadba4a3b6c, type: 3}
       propertyPath: m_RootOrder
       value: 102
@@ -4621,6 +4892,10 @@ PrefabInstance:
     - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_28
+      objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
@@ -4680,6 +4955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_24
       objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -4738,6 +5017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_203
       objectReference: {fileID: 0}
+    - target: {fileID: 179848, guid: b95b26095c91c7d4ca6786fa33dd8076, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 442430, guid: b95b26095c91c7d4ca6786fa33dd8076, type: 3}
       propertyPath: m_RootOrder
       value: 591
@@ -4792,6 +5075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Env_Tree_216
       objectReference: {fileID: 0}
+    - target: {fileID: 135980, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 487838, guid: 6862fb44c14372a438130bb13eae0c9c, type: 3}
       propertyPath: m_RootOrder
       value: 604
@@ -4842,6 +5129,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 176648, guid: 37edcb83495161e4fba7fc42556c9152, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 439282, guid: 37edcb83495161e4fba7fc42556c9152, type: 3}
       propertyPath: m_RootOrder
       value: 168
@@ -4900,6 +5191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_10
       objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
       value: 164
@@ -4954,6 +5249,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 676314629}
     m_Modifications:
+    - target: {fileID: 130106, guid: 29d1bc1fc8c964148a65c61b75ea702e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 424436, guid: 29d1bc1fc8c964148a65c61b75ea702e, type: 3}
       propertyPath: m_RootOrder
       value: 185
@@ -5011,6 +5310,10 @@ PrefabInstance:
     - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_26
+      objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
@@ -5070,6 +5373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Bld_Castle_SmallDoor_25
       objectReference: {fileID: 0}
+    - target: {fileID: 164888, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 445104, guid: ec9c5fdb7a081c84db1660869134c8b6, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -5127,6 +5434,10 @@ PrefabInstance:
     - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_Name
       value: SF_Bld_Castle_Wall_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 107346, guid: 853d54aa3a1623640aff48914201758b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 488246, guid: 853d54aa3a1623640aff48914201758b, type: 3}
       propertyPath: m_RootOrder
@@ -5186,6 +5497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF_Prop_Barrel_Cabbages_02
       objectReference: {fileID: 0}
+    - target: {fileID: 123250, guid: 92f30941a27b01849af5de13aa09a2a4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 487770, guid: 92f30941a27b01849af5de13aa09a2a4, type: 3}
       propertyPath: m_RootOrder
       value: 525
@@ -5238,3 +5553,4 @@ SceneRoots:
   - {fileID: 676314629}
   - {fileID: 119014818}
   - {fileID: 1793001947}
+  - {fileID: 1901448066}

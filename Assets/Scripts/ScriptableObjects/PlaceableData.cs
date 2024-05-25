@@ -1,4 +1,5 @@
 using System;
+using DefaultNamespace;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Placeable Data", fileName = "New Placeable Data")]
@@ -6,7 +7,7 @@ public class PlaceableData : ScriptableObject
 {
     [field:SerializeField] public string Name { get; private set; }
     [field:SerializeField] public string Description { get; private set; }
-    [field:SerializeField] public GameObject Prefab { get; private set; }
+    [field:SerializeField] public PlaceableObject Prefab { get; private set; }
     [field:SerializeField] public Sprite Icon { get; private set; }
     
     [field:SerializeField] public PlaceableDataStats[] Stats { get; private set; }

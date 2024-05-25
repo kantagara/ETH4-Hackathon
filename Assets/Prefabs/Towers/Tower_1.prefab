@@ -9,7 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 314871834600790715}
-  m_Layer: 0
+  - component: {fileID: 998127190803571727}
+  - component: {fileID: 2468635183920169393}
+  - component: {fileID: 3866382033988427361}
+  m_Layer: 6
   m_Name: Tower_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,6 +38,71 @@ Transform:
   - {fileID: 1679510579573294139}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &998127190803571727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2180065311793100924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bafb280b994ccd9cf39a9cdb3349f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InstantiationPoint: {fileID: 0}
+  ObjectToShoot: {fileID: 0}
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!65 &2468635183920169393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2180065311793100924}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 14, z: 3.28}
+  m_Center: {x: 0, y: 6.8, z: 0}
+--- !u!54 &3866382033988427361
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2180065311793100924}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &92159215636844775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83,9 +151,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f8b0667f4d1c14754836f93cb2aba39b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: 919132149155446097, guid: f8b0667f4d1c14754836f93cb2aba39b, type: 3}
       propertyPath: m_Name
       value: _archer_tower_LVL_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f8b0667f4d1c14754836f93cb2aba39b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f8b0667f4d1c14754836f93cb2aba39b, type: 3}
       propertyPath: m_IsActive
@@ -94,13 +170,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f8b0667f4d1c14754836f93cb2aba39b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3727331909652707769}
   m_SourcePrefab: {fileID: 100100000, guid: f8b0667f4d1c14754836f93cb2aba39b, type: 3}
 --- !u!4 &490280120392447756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f8b0667f4d1c14754836f93cb2aba39b, type: 3}
   m_PrefabInstance: {fileID: 92159215636844775}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &974470220261174710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f8b0667f4d1c14754836f93cb2aba39b, type: 3}
+  m_PrefabInstance: {fileID: 92159215636844775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3727331909652707769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974470220261174710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd7a48ec8f94a8d986db7494f8a829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1208205517215196112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,9 +245,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d01acb4d1c9dd457e8bc8492fd68c273, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: 919132149155446097, guid: d01acb4d1c9dd457e8bc8492fd68c273, type: 3}
       propertyPath: m_Name
       value: _archer_tower_LVL_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01acb4d1c9dd457e8bc8492fd68c273, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d01acb4d1c9dd457e8bc8492fd68c273, type: 3}
       propertyPath: m_IsActive
@@ -160,13 +264,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d01acb4d1c9dd457e8bc8492fd68c273, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7708561803761688516}
   m_SourcePrefab: {fileID: 100100000, guid: d01acb4d1c9dd457e8bc8492fd68c273, type: 3}
 --- !u!4 &1679510579573294139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d01acb4d1c9dd457e8bc8492fd68c273, type: 3}
   m_PrefabInstance: {fileID: 1208205517215196112}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2019021476174913153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d01acb4d1c9dd457e8bc8492fd68c273, type: 3}
+  m_PrefabInstance: {fileID: 1208205517215196112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7708561803761688516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019021476174913153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd7a48ec8f94a8d986db7494f8a829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2276451156848599708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -215,15 +339,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4f640f06ab2dc4be0b85721510a3af5b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: 919132149155446097, guid: 4f640f06ab2dc4be0b85721510a3af5b, type: 3}
       propertyPath: m_Name
       value: _archer_tower_LVL_1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f640f06ab2dc4be0b85721510a3af5b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f640f06ab2dc4be0b85721510a3af5b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2500569372706452338}
   m_SourcePrefab: {fileID: 100100000, guid: 4f640f06ab2dc4be0b85721510a3af5b, type: 3}
+--- !u!1 &1393579955345022925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f640f06ab2dc4be0b85721510a3af5b, type: 3}
+  m_PrefabInstance: {fileID: 2276451156848599708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2500569372706452338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393579955345022925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd7a48ec8f94a8d986db7494f8a829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1737594755795223927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4f640f06ab2dc4be0b85721510a3af5b, type: 3}
@@ -277,9 +429,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fa435df0fb83a4445b7de6f51a44aff8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3ccfb149545e41ccaf644fcf2bfa336, type: 2}
     - target: {fileID: 919132149155446097, guid: fa435df0fb83a4445b7de6f51a44aff8, type: 3}
       propertyPath: m_Name
       value: _archer_tower_LVL_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fa435df0fb83a4445b7de6f51a44aff8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa435df0fb83a4445b7de6f51a44aff8, type: 3}
       propertyPath: m_IsActive
@@ -288,10 +448,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa435df0fb83a4445b7de6f51a44aff8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5674768771097689329}
   m_SourcePrefab: {fileID: 100100000, guid: fa435df0fb83a4445b7de6f51a44aff8, type: 3}
 --- !u!4 &6097052327756994560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa435df0fb83a4445b7de6f51a44aff8, type: 3}
   m_PrefabInstance: {fileID: 5987445220941365227}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6905923017870459578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fa435df0fb83a4445b7de6f51a44aff8, type: 3}
+  m_PrefabInstance: {fileID: 5987445220941365227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5674768771097689329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6905923017870459578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd7a48ec8f94a8d986db7494f8a829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

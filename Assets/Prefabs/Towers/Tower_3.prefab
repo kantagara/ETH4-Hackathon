@@ -9,7 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1506370311631284207}
-  m_Layer: 0
+  - component: {fileID: -780215930442815058}
+  - component: {fileID: 2712736489969797946}
+  - component: {fileID: 6555245123488336281}
+  m_Layer: 6
   m_Name: Tower_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,6 +38,71 @@ Transform:
   - {fileID: 1968713910227132286}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-780215930442815058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7052214966300144672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bafb280b994ccd9cf39a9cdb3349f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InstantiationPoint: {fileID: 0}
+  ObjectToShoot: {fileID: 0}
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!65 &2712736489969797946
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7052214966300144672}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 14, z: 3.28}
+  m_Center: {x: 0, y: 6.8, z: 0}
+--- !u!54 &6555245123488336281
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7052214966300144672}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &585865624950119450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86,6 +154,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c297717f0dd164c5fa57babccd656578, type: 3}
       propertyPath: m_Name
       value: _Cannon_tower_LVL_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c297717f0dd164c5fa57babccd656578, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -148,6 +220,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0d14f40ae8c7c4f11a4180cb60685a38, type: 3}
       propertyPath: m_Name
       value: _Cannon_tower_LVL_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d14f40ae8c7c4f11a4180cb60685a38, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d14f40ae8c7c4f11a4180cb60685a38, type: 3}
       propertyPath: m_IsActive
@@ -216,6 +292,10 @@ PrefabInstance:
       value: _Cannon_tower_LVL_3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3801913547c7d4aa7ab72f4299dc23cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3801913547c7d4aa7ab72f4299dc23cd, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -280,6 +360,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c83265f020c65452c9e0b9ff84730b82, type: 3}
       propertyPath: m_Name
       value: _Cannon_tower_LVL_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c83265f020c65452c9e0b9ff84730b82, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c83265f020c65452c9e0b9ff84730b82, type: 3}
       propertyPath: m_IsActive

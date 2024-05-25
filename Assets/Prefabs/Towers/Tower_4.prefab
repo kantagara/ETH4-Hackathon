@@ -9,7 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4911757154920241161}
-  m_Layer: 0
+  - component: {fileID: 3060658931830740013}
+  - component: {fileID: 2482269029055048937}
+  - component: {fileID: 983823379358390530}
+  m_Layer: 6
   m_Name: Tower_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,6 +38,71 @@ Transform:
   - {fileID: 2660083117878330820}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3060658931830740013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4660783117210937757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bafb280b994ccd9cf39a9cdb3349f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InstantiationPoint: {fileID: 0}
+  ObjectToShoot: {fileID: 0}
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!65 &2482269029055048937
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4660783117210937757}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 14, z: 3.28}
+  m_Center: {x: 0, y: 6.8, z: 0}
+--- !u!54 &983823379358390530
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4660783117210937757}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2549102251630895663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83,13 +151,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7474091395768759877, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4608430862115086896, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -3675129323043791161, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
       propertyPath: m_Name
       value: wizard_tower_LVL_4_rig
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313164974854254562, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388529552064361470, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6423843639255950593, guid: 1af1bc130f99c4d3bb55932699acb7bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -149,13 +245,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6177917558566940711, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5867987268465927417, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496188427117012, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 553384111633344381, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
       propertyPath: m_Name
       value: wizard_tower_LVL_2_rig
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1570676635014270620, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336736949555969838, guid: 555d5fa863c2d417eb6e44fc7b4b3657, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -215,13 +339,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7595084892930683805, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6782998152746034025, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -3446761985100466153, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 389811224338171039, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
       propertyPath: m_Name
       value: wizard_tower_LVL_3_rig
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985890703936721205, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894064565475609355, guid: 6782f2019d7aa42878790d49d1a3dbcd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -281,13 +433,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7746874440364558126, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6130148473279539321, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4374572744765691698, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -3455723238888898651, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2729656055076725374, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
       propertyPath: m_Name
       value: wizard_tower_LVL_1_rig
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512735594015076349, guid: 051db5e3431664524bfa3b370dd74b9e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
