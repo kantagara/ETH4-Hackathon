@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4580789126096564921}
   - component: {fileID: -3601789512980576059}
-  - component: {fileID: -3872855316729511017}
   m_Layer: 0
   m_Name: Projectile_Balista
   m_TagString: Untagged
@@ -49,31 +48,6 @@ MonoBehaviour:
   LayerMask:
     serializedVersion: 2
     m_Bits: 136
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  targetCollider: {fileID: 0}
   stats:
     <PurchaseCost>k__BackingField: []
     <BuildTime>k__BackingField: 0
@@ -81,33 +55,9 @@ MonoBehaviour:
     <Damage>k__BackingField: 0
     <Range>k__BackingField: 20
     <UpgradeCost>k__BackingField: []
---- !u!54 &-3872855316729511017
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6866755514029192380}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+    <MaxHealth>k__BackingField: 0
+  speed: 5
+  duration: 0
 --- !u!1001 &2209264083755232586
 PrefabInstance:
   m_ObjectHideFlags: 0

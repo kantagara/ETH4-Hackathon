@@ -22,6 +22,8 @@ public class PlaceableObject : MonoBehaviour
 
     [Header("Shooting")] public Transform InstantiationPoint;
 
+    public GameObject UI;
+    
     public Projectile ObjectToShoot;
 
     private readonly Collider[] _colliders = new Collider[1];
@@ -56,6 +58,19 @@ public class PlaceableObject : MonoBehaviour
         _camera = Camera.main;
         _renderers = GetComponentsInChildren<Renderer>();
         EnableOrDisableRenderers();
+        EventSystem<OnPlaceableLeveledUp>.Subscribe(OnPlaceableLeveledUp);
+    }
+
+    private void OnDestroy()
+    {
+        EventSystem<OnPlaceableLeveledUp>.Unsubscribe(OnPlaceableLeveledUp);
+    }
+
+    private void OnPlaceableLeveledUp(OnPlaceableLeveledUp obj)
+    {
+        if (obj.Data != PlaceableData) return;
+        transform.GetChild(PlaceableData.CurrentLevel).gameObject.SetActive(true);
+        transform.GetChild(PlaceableData.CurrentLevel - 1).gameObject.SetActive(false);
     }
 
     private void OnDeath()
@@ -65,6 +80,7 @@ public class PlaceableObject : MonoBehaviour
         {
             PlaceableObject = this
         });
+
         Destroy(gameObject);
     }
 
@@ -92,7 +108,10 @@ public class PlaceableObject : MonoBehaviour
     private void EnableOrDisableRenderers()
     {
         var isPointerOverUi = Utils.IsPointerOverUIObject(_results);
-        foreach (var renderer1 in _renderers) renderer1.gameObject.SetActive(!isPointerOverUi);
+        
+        UI.SetActive(!isPointerOverUi);
+        transform.GetChild(PlaceableData.CurrentLevel).gameObject.SetActive(!isPointerOverUi);
+    
     }
 
     private void CheckMouseClick()

@@ -58,6 +58,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   InstantiationPoint: {fileID: 4413307856741904042}
+  UI: {fileID: 8562828135779204106}
   ObjectToShoot: {fileID: -2548347712836902962, guid: f5ce22d3152aa4b3ba39c334b2f1e449, type: 3}
   <State>k__BackingField: 0
   <PlaceableData>k__BackingField: {fileID: 11400000, guid: 2711d83f0dc894afb88f2473b0dd6cbf, type: 2}

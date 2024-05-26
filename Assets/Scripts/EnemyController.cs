@@ -85,6 +85,7 @@ public class EnemyController : MonoBehaviour
 
     private void SetTarget(Transform dataTransform)
     {
+        if (_targetDamageable != null) _targetDamageable.OnDeath -= TargetDamageableOnDeath;
         _targetDamageable = dataTransform.GetComponent<DamageableBase>();
         _targetDamageable.OnDeath += TargetDamageableOnDeath;
         navmeshAgent.SetDestination(_targetDamageable.Collider.GetRandomPointInBounds());

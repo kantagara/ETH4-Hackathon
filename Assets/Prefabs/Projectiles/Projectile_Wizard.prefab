@@ -49,40 +49,6 @@ MonoBehaviour:
   LayerMask:
     serializedVersion: 2
     m_Bits: 136
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.5
-      value: 0.5
-      inSlope: -0.0930513
-      outSlope: -0.0930513
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.081005454
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  targetCollider: {fileID: 0}
   stats:
     <PurchaseCost>k__BackingField: []
     <BuildTime>k__BackingField: 0
@@ -90,9 +56,11 @@ MonoBehaviour:
     <Damage>k__BackingField: 0
     <Range>k__BackingField: 20
     <UpgradeCost>k__BackingField: []
+    <MaxHealth>k__BackingField: 0
+  speed: 5
   duration: 2
   projectileRigidbody: {fileID: 2658240622918175855}
-  Speed: 30
+  Speed: 40
 --- !u!54 &2658240622918175855
 Rigidbody:
   m_ObjectHideFlags: 0
