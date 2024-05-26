@@ -57,7 +57,7 @@ MonoBehaviour:
     <UpgradeCost>k__BackingField: []
     <MaxHealth>k__BackingField: 0
   speed: 5
-  duration: 0
+  duration: 4
 --- !u!1001 &2209264083755232586
 PrefabInstance:
   m_ObjectHideFlags: 0
