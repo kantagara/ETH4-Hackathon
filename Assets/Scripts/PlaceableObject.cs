@@ -43,16 +43,29 @@ public class PlaceableObject : MonoBehaviour
     public bool CanBePlaced { get; private set; } = true;
     [field:SerializeField]public PlaceableData PlaceableData { get; set; }
 
-    public Transform OverrideTarget; 
+    public Transform OverrideTarget;
 
+    private DamageableBase _damageableBase;
 
     private void Awake()
     {
+        _damageableBase = GetComponent<DamageableBase>();
+        _damageableBase.OnDeath += OnDeath;
         _box = GetComponent<BoxCollider>();
         _box.enabled = false;
         _camera = Camera.main;
         _renderers = GetComponentsInChildren<Renderer>();
         EnableOrDisableRenderers();
+    }
+
+    private void OnDeath()
+    {
+        _damageableBase.OnDeath -= OnDeath;
+        EventSystem<OnPlaceableDestroyed>.Invoke(new OnPlaceableDestroyed()
+        {
+            PlaceableObject = this
+        });
+        Destroy(gameObject);
     }
 
 
@@ -101,12 +114,8 @@ public class PlaceableObject : MonoBehaviour
 
             _nextFire = Time.time + PlaceableData.CurrentStats.FireRate;
             Projectile projectile = Instantiate(ObjectToShoot, InstantiationPoint.position, InstantiationPoint.rotation);
-            projectile.targetCollider = _targetToShoot.GetComponent<Collider>();
-            projectile.LaunchPoint = InstantiationPoint;
-            projectile.projectileRigidbody.position = InstantiationPoint.position;
+            projectile.SetTarget(_targetToShoot);
             projectile.stats = PlaceableData.CurrentStats;
-            projectile.FireProjectile();
-            
         }
         
     }
@@ -168,7 +177,7 @@ public class PlaceableObject : MonoBehaviour
         State = PlaceableState.Building;
         EventSystem<OnPlaceablePlaced>.Invoke(new OnPlaceablePlaced
         {
-            Data = this
+            PlaceableObject = this
         });
     }
 

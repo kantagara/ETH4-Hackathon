@@ -2,23 +2,31 @@ using UnityEngine;
 
 public class FollowProjectile : Projectile
 {
+    public Rigidbody projectileRigidbody;
     public float Speed;
-    
+
+    private Collider _targetCollider;
+
+    public override void SetTarget(Transform target)
+    {
+        _targetCollider = target.GetComponent<Collider>();
+    }
+
     private void Start()
     {
         Invoke(nameof(DestroySelf), 20);
     }
 
-    private void Update()
+    protected override void Update()
     {
-        if (targetCollider == null)
+        if (_targetCollider == null)
         {
             Destroy(gameObject);
             return;
         }
-        projectileRigidbody.velocity = (targetCollider.bounds.center - transform.position).normalized * Speed;
+        projectileRigidbody.velocity = (_targetCollider.bounds.center - transform.position).normalized * Speed;
         if (Physics.OverlapSphereNonAlloc(transform.position, 1, _colliders, LayerMask) <= 0) return;
-        if (_colliders[0].transform.gameObject.TryGetComponent<Damageable>(out var damageable))
+        if (_colliders[0].transform.gameObject.TryGetComponent<DamageableHardcodedHealth>(out var damageable))
         {
             damageable.TakeDamage(stats.Damage);
         }else Debug.LogError(_colliders[0].transform.gameObject.name);
@@ -26,9 +34,7 @@ public class FollowProjectile : Projectile
         Destroy(gameObject);
     }
 
-    public override void FireProjectile()
-    {
-    }
+  
 
     private void DestroySelf()
     {

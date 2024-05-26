@@ -49,14 +49,38 @@ MonoBehaviour:
   LayerMask:
     serializedVersion: 2
     m_Bits: 136
-  launchAngle: 10
-  projectileRigidbody: {fileID: -3872855316729511017}
-  target: {fileID: 0}
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  targetCollider: {fileID: 0}
   stats:
+    <PurchaseCost>k__BackingField: []
     <BuildTime>k__BackingField: 0
     <FireRate>k__BackingField: 0
     <Damage>k__BackingField: 0
     <Range>k__BackingField: 20
+    <UpgradeCost>k__BackingField: []
 --- !u!54 &-3872855316729511017
 Rigidbody:
   m_ObjectHideFlags: 0

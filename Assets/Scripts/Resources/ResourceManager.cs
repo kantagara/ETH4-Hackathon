@@ -51,7 +51,7 @@ public class ResourceManager : Singleton<ResourceManager>
 
     private void PlaceablePlaced(OnPlaceablePlaced obj)
     {
-        Purchase(obj.Data.PlaceableData.CurrentStats.PurchaseCost);
+        Purchase(obj.PlaceableObject.PlaceableData.CurrentStats.PurchaseCost);
     }
 }
 

@@ -23,19 +23,33 @@ MonoBehaviour:
     <BuildTime>k__BackingField: 3
     <FireRate>k__BackingField: 3
     <Damage>k__BackingField: 20
-    <Range>k__BackingField: 50
+    <Range>k__BackingField: 200
     <UpgradeCost>k__BackingField:
     - <ResourceType>k__BackingField: 0
       <Amount>k__BackingField: 20
+    <MaxHealth>k__BackingField: 100
+  - <PurchaseCost>k__BackingField: []
+    <BuildTime>k__BackingField: 3
+    <FireRate>k__BackingField: 3
+    <Damage>k__BackingField: 20
+    <Range>k__BackingField: 50
+    <UpgradeCost>k__BackingField:
+    - <ResourceType>k__BackingField: 0
+      <Amount>k__BackingField: 10
+    - <ResourceType>k__BackingField: 1
+      <Amount>k__BackingField: 20
+    <MaxHealth>k__BackingField: 150
   - <PurchaseCost>k__BackingField: []
     <BuildTime>k__BackingField: 3
     <FireRate>k__BackingField: 3
     <Damage>k__BackingField: 20
     <Range>k__BackingField: 50
     <UpgradeCost>k__BackingField: []
+    <MaxHealth>k__BackingField: 200
   - <PurchaseCost>k__BackingField: []
     <BuildTime>k__BackingField: 3
     <FireRate>k__BackingField: 3
     <Damage>k__BackingField: 20
     <Range>k__BackingField: 50
     <UpgradeCost>k__BackingField: []
+    <MaxHealth>k__BackingField: 200

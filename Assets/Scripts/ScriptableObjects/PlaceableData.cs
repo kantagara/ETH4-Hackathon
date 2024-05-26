@@ -13,13 +13,17 @@ public class PlaceableData : ScriptableObject
     
     public PlaceableDataStats CurrentStats => Stats[CurrentLevel];
     
-    [field: NonSerialized] private int CurrentLevel {  get; set; } = 0;
+    [field: NonSerialized] public int CurrentLevel {  get; private set; } = 0;
     
     public void UpgradeLevel()
     {
         if (CurrentLevel < Stats.Length - 1)
         {
             CurrentLevel++;
+            EventSystem<OnPlaceableLeveledUp>.Invoke(new OnPlaceableLeveledUp()
+            {
+                Data = this
+            });
         }
     }
 }
@@ -34,7 +38,9 @@ public class PlaceableDataStats
     [field: SerializeField] public float Range { get; private set; } = 20;
     
     [field: SerializeField] public ResourceCost[] UpgradeCost { get; private set; }
+    [field: SerializeField] public float MaxHealth { get; set; }
 }
+
 
 [Serializable]
 public class ResourceCost

@@ -32,7 +32,6 @@ public class SpawnManager : Singleton<SpawnManager>
                 SpawnedEnemies.Remove(enemyInstance);
             };
             yield return new WaitForSeconds(spawnTime * animationCurve.Evaluate(Time.timeSinceLevelLoad));
-
         }
     }
 
