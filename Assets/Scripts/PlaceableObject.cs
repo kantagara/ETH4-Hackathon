@@ -56,7 +56,7 @@ public class PlaceableObject : MonoBehaviour
         _box = GetComponent<BoxCollider>();
         _box.enabled = false;
         _camera = Camera.main;
-        _renderers = GetComponentsInChildren<Renderer>();
+        _renderers = GetComponentsInChildren<Renderer>(true);
         EnableOrDisableRenderers();
         EventSystem<OnPlaceableLeveledUp>.Subscribe(OnPlaceableLeveledUp);
     }
@@ -108,6 +108,11 @@ public class PlaceableObject : MonoBehaviour
     private void EnableOrDisableRenderers()
     {
         var isPointerOverUi = Utils.IsPointerOverUIObject(_results);
+
+        foreach (var renderer1 in _renderers)
+        {
+            renderer1.gameObject.SetActive(false);
+        }
         
         UI.SetActive(!isPointerOverUi);
         transform.GetChild(PlaceableData.CurrentLevel).gameObject.SetActive(!isPointerOverUi);
@@ -185,7 +190,10 @@ public class PlaceableObject : MonoBehaviour
         {
             _currentBuildTime += Time.deltaTime;
             foreach (var renderer in _renderers)
+            {
+                renderer.material.GetFloat(Progress);
                 renderer.material.SetFloat(Progress, _currentBuildTime / PlaceableData.CurrentStats.BuildTime);
+            }
         }
     }
 
