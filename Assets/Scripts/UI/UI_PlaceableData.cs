@@ -46,25 +46,33 @@ public class UI_PlaceableData : MonoBehaviour, IPointerEnterHandler, IPointerExi
     private void OnPlaceableLeveledUp(OnPlaceableLeveledUp obj)
     {
         if (obj.Data != _placeableData) return;
-        cantAfford.SetActive(!ResourceManager.CanBePurchased(_placeableData.CurrentStats.PurchaseCost));
+        CheckPurchasePossibility();
+    }
+
+    private void CheckPurchasePossibility()
+    {
+        var canBePurchased = ResourceManager.CanBePurchased(_placeableData.CurrentStats.PurchaseCost);
+        _button.enabled = canBePurchased;
+        cantAfford.SetActive(!canBePurchased);
     }
 
     private void OnUIStateChanged(OnUIStateChanged obj)
     {
-        cantAfford.SetActive(!ResourceManager.CanBePurchased(_placeableData.CurrentStats.PurchaseCost));
+        CheckPurchasePossibility();
         upgradeState.SetActive(obj.NewState == UIState.Upgrading && !cantAfford.activeSelf);
     }
 
     private void ResourceAmountChanged(OnResourceAmountChanged obj)
     {
-        cantAfford.SetActive(!ResourceManager.CanBePurchased(_placeableData.CurrentStats.PurchaseCost));
+        CheckPurchasePossibility();
     }
 
     public void Init(PlaceableData placeableData)
     {
         _placeableData = placeableData;
         image.sprite = _placeableData.Icon;
-        cantAfford.SetActive(!ResourceManager.CanBePurchased(placeableData.CurrentStats.PurchaseCost));
+        CheckPurchasePossibility();
+        
     }
 
 }
